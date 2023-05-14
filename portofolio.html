@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Portofolio.css">
+    <title>Portofolio</title>
+</head>
+<body>
+    <div class="page-wrapper">
+    <nav class="navbar navbar-expand fixed-top navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="kliko()">Skender</a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+    </nav>
+
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, it's me Skender!</h2>
+                <p class="hero_desc">I am a professional Web Designer from Albania</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img id="profpic" src="therealme.jpg" class= "imageAboutPage" alt="" height="400px">
+                </div>
+
+                <div class="col-lg-8">
+                    <p>As a passionate front-end developer, I take pride in crafting beautiful and functional user interfaces on the web, while constantly improving my skills and staying up-to-date with the latest technologies. I am dedicated to delivering intuitive and engaging interfaces that are accessible to all, and I invest time in personal projects, open-source initiatives, and online communities to collaborate and share knowledge. For me, front-end development is about finding joy and fulfillment in bringing websites and applications to life, and pushing the boundaries of what is possible on the web.                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li onclick="display1()">Name: <span class="info" id="deldel"> &nbsp;&nbsp;&nbsp;click to reveal personal information </span></li>
+                                <li onclick="display2()">Age: <span class="info" id="ledled">  &nbsp;&nbsp;&nbsp;click to reveal personal information </span></li>
+                                <li onclick="display3()">Mobile Number:<span class="info" id="dledle"> &nbsp;&nbsp;&nbsp;click to reveal personal information </span></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li id="l1">Skender Meta</li>
+                                <li id="l2">21 Years Old</li>
+                                <li id="l3">00355692037027</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <p>Starting coding at a young age has been an advantage for me as I pursue my career in technology. It can be challenging at times, but I find it rewarding to work in this constantly evolving field. I'm passionate about technology and committed to learning and growing, which helps me achieve my dreams. Setting goals is essential to stay motivated and focused, whether it's learning new programming languages, developing new software applications, or even starting my own tech company.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h1 class="text-center">Services</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-clock"></i>
+                            <h4 class="card-title mt-3">Website Development</h4>
+                            <p class="card-text mt-3">I have extensive experience in website development, specializing in creating dynamic and visually appealing websites. With my expertise in HTML, CSS, JavaScript, and other programming languages, I have built numerous websites that cater to a wide range of clients and industries.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-layer-group'></i>
+                            <h4 class="card-title mt-3">Website Design</h4>
+                            <p class="card-text mt-3">I design websites that are visually appealing, easy to navigate, and optimized for a great user experience. I strive to create websites that not only look great, but also serve a purpose in achieving my clients' goals, whether it's to increase leads, sales, or brand awareness.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='far servicesIcon fa-check-circle'></i>
+                            <h4 class="card-title mt-3">Website Deployment</h4>
+                            <p class="card-text mt-3">When it comes to website deployment, I believe it's essential to carefully plan and test the process to ensure a smooth and successful launch. As a website developer, I always keep in mind the different factors that can impact the deployment process, such as hosting provider, server configurations, and content management systems.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-search'></i>
+                            <h4 class="card-title mt-3">SEO</h4>
+                            <p class="card-text mt-3">As an expert in SEO, I understand that it involves optimizing a website to enhance its visibility and ranking in search engine results pages (SERPs). This encompasses several techniques, including on-page optimization, link building, keyword research, and content creation.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-shield-alt'></i>
+                            <h4 class="card-title mt-3">DevOps</h4>
+                            <p class="card-text mt-3">. DevOps allows me to work more effectively with my team to continuously improve and optimize my performance. We use automated processes and tools to streamline our workflows, enabling us to quickly and reliably deploy new updates and features.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-wrench'></i>
+                            <h4 class="card-title mt-3">QA</h4>
+                            <p class="card-text mt-3">In QA, my role is to ensure that software products meet the highest quality standards by testing them thoroughly for bugs and errors. This involves working closely with the development team to understand the requirements and specifications of the product, and developing test plans and cases to cover all possible scenarios.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+<center>
+    <h2 class="text-center">There are currently</h2>
+    <div id="container" class="row justify-content-center">
+        <div class="card col-md-3">
+            <h2 id="numri1">...</h2>
+            <p>Happy Clients</p>
+        </div>
+</center>
+
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Jq436fNPJdNwpxvWR_2SGQHaEK%26pid%3DApi&f=1&ipt=c865f0b0d039ead40290cb1af157512fbb42f9c69d7f96c29ff580b39f827e63&ipo=images" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">YouTube Clone</h4>
+                            <p class="card-text">The Projects are coming soon.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Jq436fNPJdNwpxvWR_2SGQHaEK%26pid%3DApi&f=1&ipt=c865f0b0d039ead40290cb1af157512fbb42f9c69d7f96c29ff580b39f827e63&ipo=images" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Quiz App</h4>
+                            <p class="card-text">The Projects are coming soon.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+
+//clients
+// Select the first element with a class of "card"
+var div1 = document.querySelector(".card");
+
+// Set a variable to keep track of whether the script has already run
+var scriptRun = false;
+
+// Add a scroll event listener to the window object
+window.addEventListener("scroll", ndrysho);
+
+function ndrysho() {
+  // Get the height of the viewport
+  var lartesia = window.innerHeight;
+
+  // Get the position of the div1 element relative to the viewport
+  var lartesiadiv1 = div1.getBoundingClientRect().top;
+  var bottom = div1.getBoundingClientRect().bottom;
+
+  // If the top position of div1 is less than or equal to 1000 pixels from the top of the viewport and greater than or equal to 500 pixels from the bottom of the viewport
+  if (lartesiadiv1 <= 700 && bottom >= 200 && !scriptRun) {
+    // Set the scriptRun variable to true so the script doesn't run again
+    scriptRun = true;
+
+    // Set an interval to animate the number counter
+    var koha = setInterval(numra, 80);
+    var nr = 0;
+
+    function numra() {
+      nr++;
+      // Set the text content of an element with an id of "numri1"
+      document.getElementById("numri1").textContent = nr;
+
+      // If nr reaches the value of 36, clear the interval
+      if (nr == 36) {
+        clearInterval(koha);
+      }
+    }
+  }
+}
+
+  
+                    
+
+
+</script>
+
+                    <script>
+                        
+function display1(){
+
+    document.getElementById("l1").style.visibility= "visible";
+    document.querySelector('#deldel').style.visibility = "hidden";
+}
+
+function display2(){
+
+    document.getElementById("l2").style.visibility= "visible";
+    document.querySelector('#ledled').style.visibility = "hidden";
+}
+
+function display3(){
+
+    document.getElementById("l3").style.visibility= "visible";
+    document.querySelector('#dledle').style.visibility = "hidden";
+}
+
+function kliko(){
+
+    window.alert("Yes , thats me!");
+}
+                        </script>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Jq436fNPJdNwpxvWR_2SGQHaEK%26pid%3DApi&f=1&ipt=c865f0b0d039ead40290cb1af157512fbb42f9c69d7f96c29ff580b39f827e63&ipo=images" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Product Landing Page</h4>
+                            <p class="card-text">The Projects are coming soon.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Jq436fNPJdNwpxvWR_2SGQHaEK%26pid%3DApi&f=1&ipt=c865f0b0d039ead40290cb1af157512fbb42f9c69d7f96c29ff580b39f827e63&ipo=images" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Messaging Service</h4>
+                            <p class="card-text">The Projects are coming soon.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Jq436fNPJdNwpxvWR_2SGQHaEK%26pid%3DApi&f=1&ipt=c865f0b0d039ead40290cb1af157512fbb42f9c69d7f96c29ff580b39f827e63&ipo=images" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Twitter Clone</h4>
+                            <p class="card-text">The Projects are coming soon.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Jq436fNPJdNwpxvWR_2SGQHaEK%26pid%3DApi&f=1&ipt=c865f0b0d039ead40290cb1af157512fbb42f9c69d7f96c29ff580b39f827e63&ipo=images" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Blog App</h4>
+                            <p class="card-text">The Projects are coming soon.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!--   -->
+                    <div style="overflow:hidden;max-width:100%;width:500px;height:500px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Tirana,+Albania&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="our-googlemap-code" href="https://www.bootstrapskins.com/themes" id="authorize-map-data">premium bootstrap themes</a><style>#embedded-map-display img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div></div>
+
+                <div class="col-lg-6">
+                    <!-- form -->
+                    <div class="col-lg-6">
+                        <!-- form 
+                        <form action="send_email.php" method="post" id="myForm">
+                            <label for="emri" class="control-label">Name:</label>
+                            <input type="text" id="emri" name="name" placeholder="Enter your name" class="form-control">
+                            <p id="p1"></p>
+                            <label for="mail" class="control-label">Email:</label>
+                            <input type="email" id="mail" name="email" placeholder="Enter your email" class="form-control">
+                            <p id="p2"></p>
+                            <label for="pass" class="control-label">Phone Number:</label>
+                            <input type="text" id="pass" name="phone" placeholder="Enter your phone number" class="form-control">
+                            <p id="p3"></p><br>
+                            <h3>Project Details</h3>
+                            <input type="text" name="subject" class="form-control mt-3" placeholder="Subject (optional)">
+                            <div class="mb-3 mt-3">
+                                <textarea class="form-control" rows="5" name="message" placeholder="Project Details (optional)"></textarea>
+                            </div>
+                            <button type="submit" name="submit" class="btn btn-success mt-3">Contact Me</button>
+                        </form>
+
+                        -->
+                        <br>
+
+                        <iframe 
+                        width="800px" 
+                        height="480px" 
+                        src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAARxvdDdUOElIQllZQ1hRSTRLOThXTTI5WEg3S01XWS4u&embed=true" 
+                        frameborder="0" 
+                        marginwidth="0"
+                        marginheight="0" 
+                        style="border: none; max-width:100%; max-height:100vh" 
+                        allowfullscreen 
+                        webkitallowfullscreen 
+                        mozallowfullscreen 
+                        msallowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <footer id="footer">
+            <!-- social media icons -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/kacurelsipriv/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/skender-meta-2a172b264/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.twitch.tv/" target="_blank"><i class="bi bi-twitch"></i></a>
+
+                <p id="rights">All Rights and Lefts reserved | Skender's Portofolio</p>
+        </div>
+    </footer>
+    <script src="Portofolio.js"></script>
+</body>
+</html>
